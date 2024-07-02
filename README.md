@@ -1,1 +1,35 @@
-Given the rapid growth of the sports industry in Kenya, several challenges have arisen facing this growth. We have identified such challenges as lack of knowledge of existence of arenas by players, congestion where such arenas are identified and clashing of different groups of players due to poor scheduling, caused by both human and technical errors. We aim to tackle these challenges on our web-based platform where knowledge of arena existence will be provided, alongside arena availability, arena charges and rates, arena administrators contact information as well as a supported means of monetary transactions for payment. The platform will be of great benefit to all stakeholders and to local communities. It will allow players of respective sports to have knowledge of existence of arenas around them, or wherever they would like to go and play. It will enable them to pick suitable times to play as the schedules for such arenas will be made available on the public. This will enable them to save time, as well as reduce congestion within the arenas. This platform will greatly boost sales in arenas that players had no awareness of as it will drive in new clients to such, whose payments will generate greater profit for the businesses. All in all, the platform will address any other arising challenges as well, to maximize smooth running of the arenas
+# Sports Booking Facility Management System
+
+## Overview
+This project is a comprehensive sports booking facility management system designed to streamline the process of booking sports facilities. It includes features for clients to book facilities and for administrators to manage bookings, payments, and user accounts.
+
+## Features
+- **Client Features:**
+  - Browse available sports facilities.
+  - Make and manage bookings.
+  - Secure payment processing.
+
+- **Administrator Features:**
+  - Manage facility bookings.
+  - Oversee user accounts and permissions.
+  - Generate reports and analytics.
+
+## Technology Stack
+- **Backend:** PHP (Laravel)
+- **Frontend:** HTML, CSS, JavaScript
+- **Database:** MySQL
+- **Tools:** Composer, PHPUnit, Git
+
+## Installation
+
+### Prerequisites
+- PHP 7.4+
+- Composer
+- MySQL
+- Git
+
+### Steps
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/sports-booking-system.git
+   cd sports-booking-system
