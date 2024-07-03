@@ -73,6 +73,7 @@ Contributing
 3. Create a pull request with a detailed description of your changes.
 
 ## Project Structure
+```
 VendorRyan
 ├─ CS1Repo
 │  ├─ .editorconfig
@@ -149,7 +150,7 @@ VendorRyan
 │  │  ├─ database.sqlite
 │  │  ├─ factories
 │  │  │  └─ UserFactory.php
-   
+````
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
