@@ -20,8 +20,7 @@ This system provides a platform for users to browse and book sports facilities w
 ### Installation Steps:
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/sports-booking-system.git
-   cd sports-booking-system
+   https://github.com/152090RN/CSProject1.git
    ```
 
 2. **Install Composer:**
