@@ -3,76 +3,86 @@
 ## Overview
 This project is a comprehensive sports booking facility management system designed to streamline the process of booking sports facilities. It includes features for clients to book facilities and for administrators to manage bookings, payments, and user accounts.
 
-## Features
-- **Client Features:**
-  - Browse available sports facilities.
-  - Make and manage bookings.
-  - Secure payment processing.
+## Project Title and Description
+### Title:
+Sports Booking Facility Management System
 
-- **Administrator Features:**
-  - Manage facility bookings.
-  - Oversee user accounts and permissions.
-  - Generate reports and analytics.
+### Description:
+This system provides a platform for users to browse and book sports facilities while allowing administrators to manage these bookings, handle payments, and oversee user accounts. It aims to simplify the process of managing sports facility reservations and improve user experience.
 
-## Technology Stack
-- **Backend:** PHP (Laravel)
-- **Frontend:** HTML, CSS, JavaScript
-- **Database:** MySQL
-- **Tools:** Composer, PHPUnit, Git
-
-## Installation
-
-### Prerequisites
+## Project Setup/Installation Instructions
+### Dependencies:
 - PHP 7.4+
 - Composer
 - MySQL
 - Git
 
-### Steps
+### Installation Steps:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/sports-booking-system.git
    cd sports-booking-system
+   ```
 
-2. Install Composer
-    bash: composer install
+2. **Install Composer:**
+   ```bash
+   composer install
+   ```
 
-3. Setup environment variables
-    bash: cp .env.example .env
+3. **Setup environment variables:**
+   ```bash
+   cp .env.example .env
+   ```
 
-4. Generate application key
-    bash: php artisan key:generate
+4. **Generate application key:**
+   ```bash
+   php artisan key:generate
+   ```
 
-5. Run migrations
-    bash: php artisan migrate
+5. **Run migrations:**
+   ```bash
+   php artisan migrate
+   ```
 
-6. Serve the application
-    bash : php artisan serve
+6. **Serve the application:**
+   ```bash
+   php artisan serve
+   ```
 
-## Usage
-### Client Access
-1. Register an account or log in.
-2. Browse available facilities.
-3. Make a booking and proceed with the payment.
-   
-## Administrator Access
-### Log in with admin credentials.
-Manage bookings, users, and generate reports.
+## Usage Instructions
+### How to Run:
+1. **Client Access:**
+   - Register an account or log in.
+   - Browse available facilities.
+   - Make a booking and proceed with the payment.
 
-## Testing
-### Unit Testing
-To run unit tests:
-bash : php artisan test
+2. **Administrator Access:**
+   - Log in with admin credentials.
+   - Manage bookings, users, and generate reports.
 
-## Penetration Testing
-Conduct penetration testing to identify and fix security vulnerabilities. Tools like OWASP ZAP and Burp Suite can be used.
-Contributing
-## Fork the repository.
-1. Create a new branch for your feature or bugfix.
-2. Commit your changes and push to your branch.
-3. Create a pull request with a detailed description of your changes.
+### Examples:
+- **Booking a Facility:**
+   - Log in as a user.
+   - Navigate to the facilities page.
+   - Select a facility and choose a date/time.
+   - Confirm the booking and complete the payment process.
+
+### Input/Output:
+- **Input:**
+  - User registration details (e.g., name, email, password)
+  - Booking details (e.g., facility, date, time)
+  - Payment information
+
+- **Output:**
+  - Confirmation of bookings
+  - Payment receipts
+  - Reports for administrators
 
 ## Project Structure
+### Overview:
+The project is organized into several key directories, each serving a specific purpose. Below is a brief description of the main folders and their contents.
+
+### Key Files:
 ```
 VendorRyan
 ├─ CS1Repo
@@ -150,12 +160,18 @@ VendorRyan
 │  │  ├─ database.sqlite
 │  │  ├─ factories
 │  │  │  └─ UserFactory.php
-````
-## License
+```
+
+
+
+### Acknowledgements:
+- Credit to Laravel for the framework.
+- Thanks to the authors of any tutorials or libraries used.
+
+### License:
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Contact Us
-For questions or feedback, please open an issue on the GitHub repository or contact us at [jaredmutua17@gmail.com] or [ryannduati8@gmail.com]
-
-
-
+### Contact Information:
+For questions or feedback, please open an issue on the GitHub repository or contact us at:
+- [jaredmutua17@gmail.com](mailto:jaredmutua17@gmail.com)
+- [ryannduati8@gmail.com](mailto:ryannduati8@gmail.com)
