@@ -11,12 +11,47 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Home') }}
                     </x-nav-link>
+
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('')">
-                        {{ __('Link') }}
-                    </x-nav-link>
+                <x-nav-link href="{{ route('lock') }}" :active="request()->routeIs('')" class="mx-3">
+                    {{ __('Lock screen') }}
+                </x-nav-link>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex"></div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-sm btn-outline-danger my-3 mx-5 hidden visible-lg"
+                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Log out
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Log out</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Are you sure you want to log out?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <form method="POST" action="{{ route('logout') }}" x-data>
+
+
+                                    @csrf
+
+                                    <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
+                                        {{ __('Log Out') }}
+                                    </x-dropdown-link>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ms-6">
@@ -117,16 +152,15 @@
                                 </x-dropdown-link>
                             @endif
 
-                            <div class="border-t border-gray-200"></div>
+
 
                             <!-- Authentication -->
-                            <form method="POST" action="{{ route('logout') }}" x-data>
-                                @csrf
 
-                                <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
-                                    {{ __('Log Out') }}
-                                </x-dropdown-link>
-                            </form>
+
+
+
+
+
                         </x-slot>
                     </x-dropdown>
                 </div>
